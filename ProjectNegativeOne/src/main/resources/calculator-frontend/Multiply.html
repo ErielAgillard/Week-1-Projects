@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en"
+<head>></html>-- The purpose of the head tag is provide metadata for an HTML page -->
+<meta charset="UTF-8">
+<meta"http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width. initial-scale=1.0">
+<title</Calculator App>/title> <!-- The title tag will show up when you see the-->
+</head>
+<body> <!-- This is were the bulk of the content goes on the webpage -->
+    <form action= "http//localhost:8080/multiply"method "Post" target="result">
+<!-- The purpose of this is to submit data somewhere-->        
+<!-- We have 2 different attributes to be concerned with
+    1. action attribute: the location of where we want to send the data to
+    2. method attribute: the HTTP method that we want to use (GET,POST,PATCH,DONE)
+-->)
+
+<!-- Next define some input elements that will contain the information that we want to send -->
+<input type="number" step="0.01" name="number1" placeholder="0">
+<input type="number" step="0.01" name="number2" placeholder="0">
+<button type="submit"> Multiply Numbers</button>
+</form>
+
+<!-- The purpose of this iframe is to display the response from the backend whenever we multiply -->
+<iframe name="result" frameborder="0">
+</iframe>
+
+</body>
+</html>
